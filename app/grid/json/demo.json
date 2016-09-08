@@ -1,0 +1,19 @@
+{"grid": [
+  {"samples":["sample1.wav", "sample2.wav", "sample3.wav", "sample4.wav",
+              "sample5.wav", "sample6.wav", "sample7.wav", "sample8.wav",
+              "sample9.wav", "sample10.wav", "sample11.wav", "sample12.wav",
+              "sample13.wav", "sample14.wav", "sample15.wav", "sample16.wav"
+  ]},
+  {"colors": ["#cc33ff", "#cc33ff", "#cc33ff", "#cc33ff",
+              "#00ccff", "#00ccff", "#00ccff", "#00ccff",
+              "#66ff66", "#66ff66", "#66ff66", "#66ff66",
+              "#ff9933", "#ff9933", "#ff9933", "#ff9933"
+  ]},
+  {"status": [true, true, true, true,
+              true, true, true, true,
+              true, true, true, true,
+              true, true, true, true
+  ]}
+],
+"name": "demo"
+}

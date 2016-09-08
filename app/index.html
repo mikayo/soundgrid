@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="virtuaalimetsa" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="virtuaalimetsa" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="virtuaalimetsa" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="soundgrid" class="no-js"> <!--<![endif]-->
+  <head>
+    <base href="/"></base>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> SoundGrid </title>
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-loader/angular-loader.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="app.js"></script>
+    <script src="version.js"></script>
+    <script src="navbar/navbar.controller.js"></script>
+    <script src="main/main.controller.js"></script>
+    <script src="about/about.controller.js"></script>
+    <script src="grid/grid.controller.js"></script>
+    <script src="editor/editor.controller.js"></script>
+
+    <script src="service/audio.service.js"></script>
+    <script src="service/loader.service.js"></script>
+    <script src="service/midi.service.js"></script>
+
+  </head>
+  <body>
+    <!-- logo space -->
+
+
+    <!-- navigation -->
+    <nav class="navbar navbar-default" ng-controller="NavbarCtrl">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SoundGrid</a>
+        </div>
+        <div class="collapse navbar-collapse" id="topNavbar">
+          <ul class="nav navbar-nav">
+            <li role="presentation" ng-class="{ active: isActive('/main') }"><a ng-click="goMainPage()">Home</a></li>
+            <li role="presentation" ng-class="{ active: isActive('/about') }"><a ng-click="goAboutPage()">About</a></li>
+            <li role="presentation" ng-class="{ active: isActive('/grid') }"><a ng-click="goGridPage()">Grid</a></li>
+            <li role="presentation" ng-class="{ active: isActive('/editor') }"><a ng-click="goEditorPage()">Editor</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <div class="main container-fluid">
+      <div class="row">
+        <div class="col-xs-*">
+          <div ng-view></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row bottom-row text-center">
+          <div class="col-sm-6"><a href="#"><span class="glyphicon glyphicon-save"></span> Download source from github</a></div>
+          <div class="col-sm-6"><a href="#"><span class="glyphicon glyphicon-envelope"></span> Give feedback</a></div>
+        </div>
+        <div class="row bottom-row">
+          <div class="col-xs-* text-center" ng-controller="VersionCtrl">SoundGrid version {{version}} | Lisenced under <a href="LICENSE.txt">The MIT License.</a></div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

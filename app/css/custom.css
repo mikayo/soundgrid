@@ -1,0 +1,112 @@
+body {
+  padding-bottom: 0px;
+}
+
+footer {
+  background-color: rgb(240, 240, 240);
+}
+
+.main {
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+
+/* navbar centering */
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* navbar styling */
+.navbar {
+  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar ul.navbar-nav li a {
+  cursor: pointer;
+}
+
+/* textbox shadow */
+.textbox {
+  background-color: rgb(250, 250, 250);
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pad {
+  background-color: rgb(240, 240, 240);
+  height: 200px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.pad:hover {
+  border-color: rgb(255, 255, 255);
+  border-width: thick;
+}
+
+/* pad flash */
+.pad:active {
+	-webkit-animation-name: flash;
+	-moz-animation-name: flash;
+	-ms-animation-name: flash;
+	-o-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+}
+@-webkit-keyframes flash {
+	0%, 50%, 100% {opacity: 1;}
+	25%, 75% {opacity: 0;}
+}
+
+@-moz-keyframes flash {
+	0%, 50%, 100% {opacity: 1;}
+	25%, 75% {opacity: 0;}
+}
+
+@-ms-keyframes flash {
+	0%, 50%, 100% {opacity: 1;}
+	25%, 75% {opacity: 0;}
+}
+
+@-o-keyframes flash {
+	0%, 50%, 100% {opacity: 1;}
+	25%, 75% {opacity: 0;}
+}
+
+@keyframes flash {
+	0%, 50%, 100% {opacity: 1;}
+	25%, 75% {opacity: 0;}
+}
+
+.gridbox {
+  padding:  20px;
+}
+
+.editor {
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.editor-row {
+  padding-top: 10px;
+}
+
+.bottom-row {
+  padding-top: 20px;
+}
