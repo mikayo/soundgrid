@@ -3,8 +3,8 @@
 angular.module('soundgrid.controller.about', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/about', {
-    templateUrl: 'about/about.html',
+  $routeProvider.when('/soundgrid/about', {
+    templateUrl: 'soundgrid/about/about.html',
     controller: 'AboutCtrl'
   });
 }])

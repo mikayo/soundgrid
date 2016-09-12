@@ -59,10 +59,10 @@
         </div>
         <div class="collapse navbar-collapse" id="topNavbar">
           <ul class="nav navbar-nav">
-            <li role="presentation" ng-class="{ active: isActive('/main') }"><a ng-click="goMainPage()">Home</a></li>
-            <li role="presentation" ng-class="{ active: isActive('/about') }"><a ng-click="goAboutPage()">About</a></li>
-            <li role="presentation" ng-class="{ active: isActive('/grid') }"><a ng-click="goGridPage()">Grid</a></li>
-            <li role="presentation" ng-class="{ active: isActive('/editor') }"><a ng-click="goEditorPage()">Editor</a></li>
+            <li role="presentation" ng-class="{ active: isActive('/soundgrid/main') }"><a ng-click="goMainPage()">Home</a></li>
+            <li role="presentation" ng-class="{ active: isActive('/soundgrid/about') }"><a ng-click="goAboutPage()">About</a></li>
+            <li role="presentation" ng-class="{ active: isActive('/soundgrid/grid') }"><a ng-click="goGridPage()">Grid</a></li>
+            <li role="presentation" ng-class="{ active: isActive('/soundgrid/editor') }"><a ng-click="goEditorPage()">Editor</a></li>
           </ul>
         </div>
       </div>
@@ -85,7 +85,7 @@
           <div class="col-sm-6"><a href="#"><span class="glyphicon glyphicon-envelope"></span> Give feedback</a></div>
         </div>
         <div class="row bottom-row">
-          <div class="col-xs-* text-center" ng-controller="VersionCtrl">SoundGrid version {{version}} | Lisenced under <a href="LICENSE.txt">The MIT License.</a></div>
+          <div class="col-xs-* text-center" ng-controller="VersionCtrl">SoundGrid version {{version}} | Lisenced under <a href="soundgrid/LICENSE.txt">The MIT License.</a></div>
         </div>
       </div>
     </footer>

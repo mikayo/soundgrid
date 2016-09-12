@@ -14,7 +14,7 @@ angular.module('soundgrid', [
 ]).
 config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
-  $routeProvider.otherwise({redirectTo: '/main'});
+  $routeProvider.otherwise({redirectTo: '/soundgrid/main'});
 
   if (window.history && window.history.pushState) {
     $locationProvider.html5Mode({

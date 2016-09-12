@@ -3,8 +3,8 @@
 angular.module('soundgrid.controller.editor', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/editor', {
-    templateUrl: 'editor/editor.html',
+  $routeProvider.when('/soundgrid/editor', {
+    templateUrl: 'soundgrid/editor/editor.html',
     controller: 'EditorCtrl'
   });
 }])

@@ -9,19 +9,19 @@ angular.module('soundgrid.controller.navbar', [])
   };
 
   $scope.goMainPage = function () {
-    $location.path('/main');
+    $location.path('/soundgrid/main');
   };
 
   $scope.goAboutPage = function () {
-    $location.path('/about');
+    $location.path('/soundgrid/about');
   };
 
   $scope.goGridPage = function () {
-    $location.path('/grid');
+    $location.path('/soundgrid/grid');
   };
 
   $scope.goEditorPage = function () {
-    $location.path('/editor');
+    $location.path('/soundgrid/editor');
   };
 
 }]);

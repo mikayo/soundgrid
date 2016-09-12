@@ -3,8 +3,8 @@
 angular.module('soundgrid.controller.main', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/main', {
-    templateUrl: 'main/main.html',
+  $routeProvider.when('/soundgrid/main', {
+    templateUrl: 'soundgrid/main/main.html',
     controller: 'MainCtrl'
   });
 }])

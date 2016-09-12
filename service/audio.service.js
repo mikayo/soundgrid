@@ -28,7 +28,7 @@ angular.module('soundgrid.service.audio', [])
   BufferLoader.prototype.loadBuffer = function(url, index) {
     // load buffer asynchronously
     var request = new XMLHttpRequest();
-    request.open("GET","sounds/" + url, true);
+    request.open("GET","soundgrid/sounds/" + url, true);
     request.responseType = "arraybuffer";
 
     var loader = this;

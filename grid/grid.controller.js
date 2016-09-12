@@ -3,8 +3,8 @@
 angular.module('soundgrid.controller.grid', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/grid', {
-    templateUrl: 'grid/grid.html',
+  $routeProvider.when('/soundgrid/grid', {
+    templateUrl: 'soundgrid/grid/grid.html',
     controller: 'GridCtrl'
   });
 }])
@@ -17,7 +17,7 @@ angular.module('soundgrid.controller.grid', ['ngRoute'])
   };
 
   $scope.init = function() {
-    LoaderService.initGrid("grid/json/demo.json");
+    LoaderService.initGrid("soundgrid/grid/json/demo.json");
   };
 
 }]);
